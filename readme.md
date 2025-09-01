@@ -29,7 +29,7 @@ API Restful desenvolvida para gerenciamento de livros, autores e empréstimos de
    ```
 4. A API estará disponível em `http://localhost:3000`.
 
-## [cite_start]Documentação da API
+## Documentação da API
 
 A seguir estão descritos os endpoints disponíveis para o recurso **Livros**.
 
@@ -42,7 +42,7 @@ Lista todos os livros.
   - `order={asc|desc}`: Define a ordem da ordenação.
   - `page={numero}`: Define a página para paginação.
   - `size={numero}`: Define o tamanho da página.
-- [cite_start]**Resposta de Sucesso (200 OK):** 
+- **Resposta de Sucesso (200 OK):** 
   ```json
   [
     {
@@ -65,7 +65,7 @@ Busca um livro específico pelo ID.
     /* ... */
   }
   ```
-- [cite_start]**Resposta de Erro (404 Not Found):**
+- **Resposta de Erro (404 Not Found):**
   ```json
   {
     "erro": "Livro não encontrado",
@@ -106,5 +106,5 @@ Atualiza um livro existente.
 Remove um livro.
 - **Resposta de Sucesso (204 No Content):** Nenhum corpo na resposta.
 
-### [cite_start]Utilizando HATEOAS
+### Utilizando HATEOAS
 As respostas para os endpoints de livros incluem um campo `_links`. Esse campo contém uma lista de ações possíveis para o recurso, como buscar, atualizar ou deletar. Clientes da API devem usar esses links para navegar pela aplicação, em vez de montar as URIs manualmente.
